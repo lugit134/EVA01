@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Product 1",
+    "price": 120,
+    "image": "img/productos/vialsangre.webp",
+    "description": "A high-quality product featuring an elegant design and excellent performance."
+  },
+  {
+    "id": 2,
+    "name": "Product 2",
+    "price": 150,
+    "image": "img/productos/tierra.jpg",
+    "description": "A great product suitable for daily use with premium materials."
+  }
+]
