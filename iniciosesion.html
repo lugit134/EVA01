@@ -8,40 +8,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            background-image: url('loginnn.jpg'); 
+            background-image: url('miau.jpg'); 
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
             min-height: 100vh;
             color: #f8f9fa; 
         }
         
+        /* Barra superior */
         .navbar-custom {
-            background-color: #961919; 
-            border-bottom: 2px solid #1a252f;
+            background-color: #212529; 
+            border-bottom: 2px solid #343a40;
         }
-        .navbar-custom .text-dark,
-        .navbar-custom a.text-dark {
-            color: #31060a !important; 
+        .navbar-custom .text-white,
+        .navbar-custom a.text-white {
+            color: #ffffff !important; 
         }
         
+        /* Tarjeta principal */
         .card-login {
             background-color: #212529 !important; 
             border: 1px solid #343a40;
-            color: #161414; 
+            color: #f8f9fa; 
         }
         
+        /* Inputs del formulario */
         .form-control-custom {
             background-color: #330915; 
+            border: 1px solid #5c060e;
             color: #ffffff !important; 
         }
+        .form-control-custom:focus {
+            background-color: #420b1c;
+            border-color: #961919;
+            box-shadow: 0 0 5px rgba(150, 25, 25, 0.5);
+        }
+
+        /* Botón rojo gótico */
         .btn-outline-custom {
-            color: #961919; 
-            border-color: #1a252f;
+            color: #ffffff; 
+            border-color: #7d0a14;
+            background-color: #7d0a14;
         }
         .btn-outline-custom:hover {
             background-color: #000000;
-            color: #961934;
+            color: #ff4d4d;
+            border-color: #000000;
         }
     </style>
 </head>
@@ -50,28 +64,28 @@
     <header class="navbar-custom py-3 mb-5">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center gap-2">
-                <i class="fas fa-heart" style="color: #c0392b; font-size: 1.2rem;"></i>
-                <strong class="fs-5 text-dark text-capitalize">Sangre Azúl</strong>
+                <i class="fas fa-heart" style="color: #551818; font-size: 1.2rem;"></i>
+                <strong class="fs-5 text-white text-capitalize">Sangre Azúl</strong>
             </div>
             <nav class="d-flex gap-3">
-                <a href="#" class="text-decoration-none text-dark">Home</a> |
-                <a href="#" class="text-decoration-none text-dark">Productos</a> |
-                <a href="#" class="text-decoration-none text-dark">Nosotros</a> |
-                <a href="#" class="text-decoration-none text-dark">Blogs</a> |
-                <a href="#" class="text-decoration-none text-dark">Contacto</a>
+                <a href="index.html" class="text-decoration-none text-white">Home</a> |
+                <a href="productos.html" class="text-decoration-none text-white">Productos</a> |
+                <a href="nosotros.html" class="text-decoration-none text-white">Nosotros</a> |
+                <a href="blogs.html" class="text-decoration-none text-white">Blogs</a> |
+                <a href="contactos.html" class="text-decoration-none text-white">Contacto</a>
             </nav>
-            <div class="text-dark">
+            <div class="text-white">
                 🛒 Cart (0)
             </div>
         </div>
     </header>
 
-    <main class="container d-flex flex-column align-items-center">
-        
-        <h2 class="mb-4 fw-bold text-white fs-1">Sangre Azúl</h2>
+    <!-- Contenedor alineado a la izquierda -->
+    <main class="container d-flex flex-column align-items-start my-auto">
 
-        <div class="card card-login p-4 border shadow-lg" style="width: 100%; max-width: 500px;">
-            <div class="p-0 text-start mb-4 fw-bold fs-5" style="color: #961934;">
+        <!-- ms-md-5 empuja la tarjeta hacia la izquierda alineándola con el inicio del texto superior -->
+        <div class="card card-login p-4 border shadow-lg my-5 ms-md-5" style="width: 100%; max-width: 420px;">
+            <div class="p-0 text-start mb-4 fw-bold fs-4" style="color: #e61c24;">
                 Inicio de Sesión
             </div>
 
@@ -87,7 +101,7 @@
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-outline-custom px-5 py-2">Iniciar sesión</button>
+                    <button type="submit" class="btn btn-outline-custom px-5 py-2 fw-bold">Iniciar sesión</button>
                 </div>
             </form>
         </div>
