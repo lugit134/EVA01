@@ -7,16 +7,7 @@ body {
   background-color: #3d0000;
 }
 
-/* ====== Header ====== */
-header {
-  background-color: #333;
-  color: rgb(116, 4, 4);
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
+
 
 .logo {
   display: flex;
@@ -28,21 +19,7 @@ header {
   border-radius: 8px;
 }
 
-nav {
-  display: flex;
-  gap: 20px;
-}
 
-nav a {
-  color: rgb(54, 25, 25);
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #3b020e;
-}
 
 /* Menu Button */
 .menu-toggle {
@@ -224,3 +201,40 @@ footer {
   color: #555;
   margin-bottom: 10px;
 }
+
+        body {
+            background-image: url('loginnn.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            color: #f8f9fa; 
+        }
+        
+        .navbar-custom {
+            background-color: #961919; 
+            border-bottom: 2px solid #1a252f;
+        }
+        .navbar-custom .text-dark,
+        .navbar-custom a.text-dark {
+            color: #31060a !important; 
+        }
+        
+        .card-login {
+            background-color: #212529 !important; 
+            border: 1px solid #343a40;
+            color: #161414; 
+        }
+        
+        .form-control-custom {
+            background-color: #330915; 
+            color: #ffffff !important; 
+        }
+        .btn-outline-custom {
+            color: #961919; 
+            border-color: #1a252f;
+        }
+        .btn-outline-custom:hover {
+            background-color: #000000;
+            color: #961934;
+        }
