@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+<title>Producto - Vial de Sangre</title>
+
+
+</head>
+
+<body>
+
+<header>
+    <header class="navbar-custom py-3 mb-5">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-heart" style="color: #ff3333; font-size: 1.2rem;"></i>
+                <strong class="fs-5 text-white text-capitalize">Veneno Dulce</strong>
+            </div>
+            <nav class="d-flex gap-3">
+                <a href="index.html" class="text-decoration-none text-white">Home</a> |
+                <a href="productos.html" class="text-decoration-none text-white fw-bold">Productos</a> |
+                <a href="nosotros.html" class="text-decoration-none text-white">Nosotros</a> |
+                <a href="blogs.html" class="text-decoration-none text-white">Blogs</a> |
+                <a href="contactos.html" class="text-decoration-none text-white">Contacto</a> |
+                <a href="registro.html" class="text-decoration-none text-white">Registrarse</a> |
+                <a href="iniciosesion.html" class="text-decoration-none text-white">Iniciar sesión</a> |
+            </nav>
+            
+            <!-- CARRITO CLICKABLE -->
+            <button type="button" class="btn text-white p-0 border-0" data-bs-toggle="modal" data-bs-target="#cartModal">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </button>
+        </div>
+    </header>
+</header>
+
+<main>
+
+
+    <div class="product-layout">
+
+        <section class="gallery">
+            <div class="main-image"></div>
+
+            <div class="thumbnails">
+                <div class="thumbnail selected product-thumb"></div>
+                <div class="thumbnail product-thumb"></div>
+                <div class="thumbnail product-thumb"></div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="title-row">
+                <h1>Vial de Sangre</h1>
+                <div class="price">$100</div>
+            </div>
+
+            <div class="description">
+                Vial de sangre presentado en un recipiente decorativo
+                de estilo oscuro y elegante. Un producto ideal para
+                colecciones, ambientaciones y temáticas de fantasía.
+                Disponible en una presentación cuidadosamente diseñada
+                para destacar en cualquier ocasión.
+            </div>
+
+            <div class="quantity-row">
+                <div class="quantity-label">Cantidad</div>
+
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+
+            <button class="add-cart">Añadir al carrito</button>
+
+            <div class="bottom-line"></div>
+        </section>
+
+    </div>
+</main>
+
+</body>
+</html>
